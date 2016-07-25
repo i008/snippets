@@ -27,6 +27,13 @@ class ImageIndexer(object):
         return self
     
     def __exit__(self, exc_type, exc_val, exc_tb):
+        if self.image_id_buffer:
+            print "writing last buffers"
+            print(len(self.image_id_buffer))
+            
+            self._write_buffer(self.image_id_db, self.image_id_buffer)
+            self._write_buffer(self.image_vector_db, self.image_vector_buffer)
+
         print "closing h5 db"
         self.db.close()
         print "indexing took {0}".format(time.time() - self.t0 )
@@ -72,6 +79,7 @@ class ImageIndexer(object):
             
             # clean buffers
             self._clean_buffers()
+
             
     def _write_buffer(self, dataset, buf):
         print "Writing buffer {}".format(dataset)
