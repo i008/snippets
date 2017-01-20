@@ -1,0 +1,6 @@
+{
+    "dev": {
+        "app_function": "s3trigger.trigger", 
+        "s3_bucket": "zappa-g9ynnk48v"
+    }
+}

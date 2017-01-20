@@ -5,7 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-
+zappenv
 # Distribution / packaging
 .Python
 env/
@@ -23,7 +23,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
-
+snippets/usingzappa/zappaenv/
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
