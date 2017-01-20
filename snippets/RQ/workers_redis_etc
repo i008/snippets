@@ -1,0 +1,4 @@
+rq worker (que)
+redis-server
+redis-cli monitor
+rq-dashboard
