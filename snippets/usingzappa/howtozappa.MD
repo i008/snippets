@@ -1,6 +1,13 @@
 If using anaconda -> disable to use default system-python2 (for now zappa dosent work with conda)
 You need to be autheticated on aws-cli (create and apropriate IAM for that)
 
+Other option is to change the virtualenv interpreter globally
+like this:
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python2.7 {or any desired python interpreted}
+```
+
+```
+
 ```bash
 aws configure
 virtualenv zappaenv
