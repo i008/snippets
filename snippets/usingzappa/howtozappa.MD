@@ -34,7 +34,7 @@ To create a aws-event-trigger edit the zappa_settings.js file:
             "event_source": {
                   "arn":  "arn:aws:s3:::i008",
                   "events": [
-                    "s3:ObjectCreated:*" // Supported event types: http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#supported-notification-event-types
+                    "s3:ObjectCreated:*" 
                   ]
                }
             }]
